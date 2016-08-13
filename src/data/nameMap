@@ -1,6 +1,6 @@
 const nameMap = {
     "normal": "ノーマル",
-    "fire": "ノーマル",
+    "fire": "ほのお",
     "water": "みず",
     "grass": "くさ",
     "electric": "でんき",
