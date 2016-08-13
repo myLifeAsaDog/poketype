@@ -1,0 +1,165 @@
+@import 'parts/_sprite';
+@import 'parts/_mixin';
+@import 'parts/_pokemon';
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+}
+
+ul, ol {
+    li {
+        list-style-type: none;
+        list-style-position: inside;
+    }
+}
+
+button {
+    float: left;
+    padding: 20px 10px;
+    width: 50%;
+}
+
+html,
+body {
+    background: #FFFDE7;
+    font-size: 16px;
+    color: #666666;
+}
+
+nav {
+    dl {
+        padding: 20px 10px 5px 10px;
+        overflow: hidden;
+
+        dt {
+            padding: 10px;
+            background: #4DB6AC;
+            border-radius: 14px;
+            color: #ffffff;
+            text-align: center;
+        }
+        &.ExOpen {
+            dd {
+                height: 82px;
+                transition: height 0.3s ease;
+            }
+        }
+        dd {
+            height: 0px;
+            transition: height 0.3s ease;
+
+            ul {
+                padding: 10px 10px 0 10px;
+                overflow: hidden;
+
+                li {
+                    float: left;
+                    width: 20%;
+                    padding: 10px 0;
+                    border-radius: 14px;
+                    text-align: center;
+
+                    &.ExCurrent {
+                        background: #D7CCC8;
+                    }
+                }
+            }
+        }
+    }
+}
+.viewport {
+    width: 100vw;
+    overflow: hidden;
+}
+.pokemonList {
+    clear: both;
+    overflow: hidden;
+
+    article {
+        float: left;
+        width: 100vw;
+        padding: 15px;
+        box-sizing: border-box;
+
+        .pokemon-inner {
+            padding: 15px;
+            border-radius: 6px;
+            background: #fafafa;
+            box-shadow: 0px 1px 6px -3px #000000;
+            text-align: center;
+
+            span {
+                font-size: 12px;
+            }
+
+            figure {
+
+                span {
+                    display: block;
+                    margin: 20px auto;
+                }
+
+                figcaption {
+                    padding: 10px;
+                    line-height: 3;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 30%;
+                        height: 2px;
+                        margin: 0 auto;
+                        background: #26A69A;
+                    }
+                }
+            }
+
+            dl {
+                dt {
+                    padding: 5px;
+                    background: #4DB6AC;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+                dd {
+                    padding: 15px 10px;
+                    font-size: 14px;
+
+                    ul {
+                        li {
+                            display: inline-block;
+                            line-height: 1.5;
+
+                            &:not(:first-child)::before {
+                                content: '/';
+                            }
+                        }
+                    }
+                }
+            }
+
+            .typeTable {
+                display: inline-block;
+
+                dt {
+                    margin: 0 auto;
+                    width: 100px;
+                    border-radius: 16px;
+                }
+            }
+
+            .affinityTable {
+                margin: 0 0 10px 0;
+                border-radius: 4px;
+                border: solid 1px #cccccc;
+            }
+        }
+    }
+}

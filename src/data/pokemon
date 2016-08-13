@@ -1,0 +1,2888 @@
+const data = [
+    {
+        "fields": [
+            {
+                "Name": "アーボ",
+                "Number": "023",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "アーボック",
+                "Number": "024",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "アズマオウ",
+                "Number": "119",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "イーブイ",
+                "Number": "133",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "イシツブテ",
+                "Number": "074",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "electric",
+                    "poison",
+                    "flying",
+                    "rock"
+                ],
+                "Types": [
+                    "rock",
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice",
+                    "fighting",
+                    "ground",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "イワーク",
+                "Number": "095",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "electric",
+                    "poison",
+                    "flying",
+                    "rock"
+                ],
+                "Types": [
+                    "rock",
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice",
+                    "fighting",
+                    "ground",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "ウインディ",
+                "Number": "059",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ウツドン",
+                "Number": "070",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ウツボット",
+                "Number": "071",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "エビワラー",
+                "Number": "107",
+                "Resistant": [
+                    "bug",
+                    "rock",
+                    "dark"
+                ],
+                "Types": [
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "エレブー",
+                "Number": "125",
+                "Resistant": [
+                    "electric",
+                    "flying",
+                    "steel"
+                ],
+                "Types": [
+                    "electric"
+                ],
+                "Weaknesses": [
+                    "ground"
+                ]
+            },
+            {
+                "Name": "オコリザル",
+                "Number": "057",
+                "Resistant": [
+                    "bug",
+                    "rock",
+                    "dark"
+                ],
+                "Types": [
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "オニスズメ",
+                "Number": "021",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "オニドリル",
+                "Number": "022",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "オムスター",
+                "Number": "139",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying"
+                ],
+                "Types": [
+                    "rock",
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground"
+                ]
+            },
+            {
+                "Name": "オムナイト",
+                "Number": "138",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying"
+                ],
+                "Types": [
+                    "rock",
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground"
+                ]
+            }
+        ],
+        "label": "あ行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "ガーディ",
+                "Number": "058",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "カイリキー",
+                "Number": "068",
+                "Resistant": [
+                    "bug",
+                    "rock",
+                    "dark"
+                ],
+                "Types": [
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "カイリュー",
+                "Number": "149",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "grass",
+                    "fighting",
+                    "ground",
+                    "bug"
+                ],
+                "Types": [
+                    "dragon",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "ice",
+                    "rock",
+                    "dragon",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "カイロス",
+                "Number": "127",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "ground"
+                ],
+                "Types": [
+                    "bug"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "カビゴン",
+                "Number": "143",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "カブト",
+                "Number": "140",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying"
+                ],
+                "Types": [
+                    "rock",
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground"
+                ]
+            },
+            {
+                "Name": "カブトプス",
+                "Number": "141",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying"
+                ],
+                "Types": [
+                    "rock",
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground"
+                ]
+            },
+            {
+                "Name": "カメール",
+                "Number": "008",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "カメックス",
+                "Number": "009",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "カモネギ",
+                "Number": "083",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "カラカラ",
+                "Number": "104",
+                "Resistant": [
+                    "electric",
+                    "poison",
+                    "rock"
+                ],
+                "Types": [
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice"
+                ]
+            },
+            {
+                "Name": "ガラガラ",
+                "Number": "105",
+                "Resistant": [
+                    "electric",
+                    "poison",
+                    "rock"
+                ],
+                "Types": [
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice"
+                ]
+            },
+            {
+                "Name": "ガルーラ",
+                "Number": "115",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "キャタピー",
+                "Number": "010",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "ground"
+                ],
+                "Types": [
+                    "bug"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ギャラドス",
+                "Number": "130",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "fighting",
+                    "ground",
+                    "bug",
+                    "steel"
+                ],
+                "Types": [
+                    "water",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ギャロップ",
+                "Number": "078",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "キュウコン",
+                "Number": "038",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "キングラー",
+                "Number": "099",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "クサイハナ",
+                "Number": "044",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "クラブ",
+                "Number": "098",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "ケーシィ",
+                "Number": "063",
+                "Resistant": [
+                    "fighting",
+                    "psychic"
+                ],
+                "Types": [
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ゲンガー",
+                "Number": "094",
+                "Resistant": [
+                    "normal",
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "ghost",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ケンタロス",
+                "Number": "128",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "コイキング",
+                "Number": "129",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "コイル",
+                "Number": "081",
+                "Resistant": [
+                    "normal",
+                    "electric",
+                    "grass",
+                    "ice",
+                    "poison",
+                    "flying",
+                    "psychic",
+                    "bug",
+                    "rock",
+                    "dragon",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "electric",
+                    "steel"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "fighting",
+                    "ground"
+                ]
+            },
+            {
+                "Name": "ゴース",
+                "Number": "092",
+                "Resistant": [
+                    "normal",
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "ghost",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ghost",
+                "Number": "093",
+                "Resistant": [
+                    "normal",
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "ghost",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ゴーリキー",
+                "Number": "067",
+                "Resistant": [
+                    "bug",
+                    "rock",
+                    "dark"
+                ],
+                "Types": [
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "コクーン",
+                "Number": "014",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "bug",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "psychic",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "コダック",
+                "Number": "054",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "コラッタ",
+                "Number": "019",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "ゴルダック",
+                "Number": "055",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "ゴルバット",
+                "Number": "042",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "psychic",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ゴローニャ",
+                "Number": "076",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "electric",
+                    "poison",
+                    "flying",
+                    "rock"
+                ],
+                "Types": [
+                    "rock",
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice",
+                    "fighting",
+                    "ground",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "ゴローン",
+                "Number": "075",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "electric",
+                    "poison",
+                    "flying",
+                    "rock"
+                ],
+                "Types": [
+                    "rock",
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice",
+                    "fighting",
+                    "ground",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "コンパン",
+                "Number": "048",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "bug",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "psychic",
+                    "rock"
+                ]
+            }
+        ],
+        "label": "か行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "サイドン",
+                "Number": "112",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "electric",
+                    "poison",
+                    "flying",
+                    "rock"
+                ],
+                "Types": [
+                    "ground",
+                    "rock"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice",
+                    "fighting",
+                    "ground",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "サイホーン",
+                "Number": "111",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "electric",
+                    "poison",
+                    "flying",
+                    "rock"
+                ],
+                "Types": [
+                    "ground",
+                    "rock"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice",
+                    "fighting",
+                    "ground",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "サワムラー",
+                "Number": "106",
+                "Resistant": [
+                    "bug",
+                    "rock",
+                    "dark"
+                ],
+                "Types": [
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "サンダー",
+                "Number": "145",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "flying",
+                    "bug",
+                    "steel"
+                ],
+                "Types": [
+                    "electric",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "サンダース",
+                "Number": "135",
+                "Resistant": [
+                    "electric",
+                    "flying",
+                    "steel"
+                ],
+                "Types": [
+                    "electric"
+                ],
+                "Weaknesses": [
+                    "ground"
+                ]
+            },
+            {
+                "Name": "サンド",
+                "Number": "027",
+                "Resistant": [
+                    "electric",
+                    "poison",
+                    "rock"
+                ],
+                "Types": [
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice"
+                ]
+            },
+            {
+                "Name": "サンドパン",
+                "Number": "028",
+                "Resistant": [
+                    "electric",
+                    "poison",
+                    "rock"
+                ],
+                "Types": [
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice"
+                ]
+            },
+            {
+                "Name": "シードラ",
+                "Number": "117",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "シェルダー",
+                "Number": "090",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "シャワーズ",
+                "Number": "134",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "ジュゴン",
+                "Number": "087",
+                "Resistant": [
+                    "water",
+                    "ice"
+                ],
+                "Types": [
+                    "water",
+                    "ice"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "スターミー",
+                "Number": "121",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "fighting",
+                    "psychic",
+                    "steel"
+                ],
+                "Types": [
+                    "water",
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ストライク",
+                "Number": "123",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "ground",
+                    "bug"
+                ],
+                "Types": [
+                    "bug",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "electric",
+                    "ice",
+                    "flying",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ズバット",
+                "Number": "041",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "psychic",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "スピアー",
+                "Number": "015",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "bug",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "psychic",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "スリーパー",
+                "Number": "097",
+                "Resistant": [
+                    "fighting",
+                    "psychic"
+                ],
+                "Types": [
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "スリープ",
+                "Number": "096",
+                "Resistant": [
+                    "fighting",
+                    "psychic"
+                ],
+                "Types": [
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ゼニガメ",
+                "Number": "007",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            }
+        ],
+        "label": "さ行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "ダグトリオ",
+                "Number": "051",
+                "Resistant": [
+                    "electric",
+                    "poison",
+                    "rock"
+                ],
+                "Types": [
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice"
+                ]
+            },
+            {
+                "Name": "タッツー",
+                "Number": "116",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "タマタマ",
+                "Number": "102",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground",
+                    "psychic"
+                ],
+                "Types": [
+                    "grass",
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying",
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ディグダ",
+                "Number": "050",
+                "Resistant": [
+                    "electric",
+                    "poison",
+                    "rock"
+                ],
+                "Types": [
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "grass",
+                    "ice"
+                ]
+            },
+            {
+                "Name": "ドードー",
+                "Number": "084",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ドードリオ",
+                "Number": "085",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ドガース",
+                "Number": "109",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ドククラゲ",
+                "Number": "073",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "water",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "トサキント",
+                "Number": "118",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "トランセル",
+                "Number": "011",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "ground"
+                ],
+                "Types": [
+                    "bug"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "rock"
+                ]
+            }
+        ],
+        "label": "た行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "ナゾノクサ",
+                "Number": "043",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ナッシー",
+                "Number": "103",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground",
+                    "psychic"
+                ],
+                "Types": [
+                    "grass",
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying",
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ニドキング",
+                "Number": "034",
+                "Resistant": [
+                    "electric",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "rock",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison",
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ice",
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ニドクイン",
+                "Number": "031",
+                "Resistant": [
+                    "electric",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "rock",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison",
+                    "ground"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ice",
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ニドラン♀",
+                "Number": "029",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ニドラン♂",
+                "Number": "032",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ニドリーナ",
+                "Number": "030",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ニドリーノ",
+                "Number": "033",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ニャース",
+                "Number": "052",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "ニョロゾ",
+                "Number": "061",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "ニョロボン",
+                "Number": "062",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "bug",
+                    "rock",
+                    "dark",
+                    "steel"
+                ],
+                "Types": [
+                    "water",
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "ニョロモ",
+                "Number": "060",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            }
+        ],
+        "label": "な行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "パウワウ",
+                "Number": "086",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "ハクリュー",
+                "Number": "148",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "electric",
+                    "grass"
+                ],
+                "Types": [
+                    "dragon"
+                ],
+                "Weaknesses": [
+                    "ice",
+                    "dragon",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "バタフリー",
+                "Number": "012",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "ground",
+                    "bug"
+                ],
+                "Types": [
+                    "bug",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "electric",
+                    "ice",
+                    "flying",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "パラス",
+                "Number": "046",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground"
+                ],
+                "Types": [
+                    "bug",
+                    "grass"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying",
+                    "bug",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "パラセクト",
+                "Number": "047",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "ground"
+                ],
+                "Types": [
+                    "bug",
+                    "grass"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying",
+                    "bug",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "バリヤード",
+                "Number": "122",
+                "Resistant": [
+                    "fighting",
+                    "psychic",
+                    "dragon"
+                ],
+                "Types": [
+                    "psychic",
+                    "fairy"
+                ],
+                "Weaknesses": [
+                    "poison",
+                    "ghost",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "パルシェン",
+                "Number": "091",
+                "Resistant": [
+                    "water",
+                    "ice"
+                ],
+                "Types": [
+                    "water",
+                    "ice"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ビードル",
+                "Number": "013",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "bug",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "psychic",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ピカチュウ",
+                "Number": "025",
+                "Resistant": [
+                    "electric",
+                    "flying",
+                    "steel"
+                ],
+                "Types": [
+                    "electric"
+                ],
+                "Weaknesses": [
+                    "ground"
+                ]
+            },
+            {
+                "Name": "ピクシー",
+                "Number": "036",
+                "Resistant": [
+                    "fighting",
+                    "bug",
+                    "dragon",
+                    "dark"
+                ],
+                "Types": [
+                    "fairy"
+                ],
+                "Weaknesses": [
+                    "poison",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "ピジョット",
+                "Number": "018",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ピジョン",
+                "Number": "017",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ピッピ",
+                "Number": "035",
+                "Resistant": [
+                    "fighting",
+                    "bug",
+                    "dragon",
+                    "dark"
+                ],
+                "Types": [
+                    "fairy"
+                ],
+                "Weaknesses": [
+                    "poison",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "ヒトカゲ",
+                "Number": "004",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ヒトデマン",
+                "Number": "120",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "steel"
+                ],
+                "Types": [
+                    "water"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass"
+                ]
+            },
+            {
+                "Name": "ビリリダマ",
+                "Number": "100",
+                "Resistant": [
+                    "electric",
+                    "flying",
+                    "steel"
+                ],
+                "Types": [
+                    "electric"
+                ],
+                "Weaknesses": [
+                    "ground"
+                ]
+            },
+            {
+                "Name": "ファイヤー",
+                "Number": "146",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "fighting",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "electric",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ブースター",
+                "Number": "136",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "フーディン",
+                "Number": "065",
+                "Resistant": [
+                    "fighting",
+                    "psychic"
+                ],
+                "Types": [
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ブーバー",
+                "Number": "126",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "プクリン",
+                "Number": "040",
+                "Resistant": [
+                    "bug",
+                    "ghost",
+                    "dragon",
+                    "dark"
+                ],
+                "Types": [
+                    "normal",
+                    "fairy"
+                ],
+                "Weaknesses": [
+                    "poison",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "フシギソウ",
+                "Number": "002",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "フシギダネ",
+                "Number": "001",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "フシギバナ",
+                "Number": "003",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "プテラ",
+                "Number": "142",
+                "Resistant": [
+                    "normal",
+                    "fire",
+                    "poison",
+                    "flying",
+                    "bug"
+                ],
+                "Types": [
+                    "rock",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "electric",
+                    "ice",
+                    "rock",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "フリーザー",
+                "Number": "144",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug"
+                ],
+                "Types": [
+                    "ice",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "electric",
+                    "rock",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "プリン",
+                "Number": "039",
+                "Resistant": [
+                    "bug",
+                    "ghost",
+                    "dragon",
+                    "dark"
+                ],
+                "Types": [
+                    "normal",
+                    "fairy"
+                ],
+                "Weaknesses": [
+                    "poison",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "ベトベター",
+                "Number": "088",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ベトベトン",
+                "Number": "089",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "ペルシアン",
+                "Number": "053",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "ベロリンガ",
+                "Number": "108",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "ポッポ",
+                "Number": "016",
+                "Resistant": [
+                    "grass",
+                    "ground",
+                    "bug",
+                    "ghost"
+                ],
+                "Types": [
+                    "normal",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ice",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ポニータ",
+                "Number": "077",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ポリゴン",
+                "Number": "137",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            }
+        ],
+        "label": "は行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "マダツボミ",
+                "Number": "069",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "マタドガス",
+                "Number": "110",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "マルマイン",
+                "Number": "101",
+                "Resistant": [
+                    "electric",
+                    "flying",
+                    "steel"
+                ],
+                "Types": [
+                    "electric"
+                ],
+                "Weaknesses": [
+                    "ground"
+                ]
+            },
+            {
+                "Name": "マンキー",
+                "Number": "056",
+                "Resistant": [
+                    "bug",
+                    "rock",
+                    "dark"
+                ],
+                "Types": [
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "ミニリュウ",
+                "Number": "147",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "electric",
+                    "grass"
+                ],
+                "Types": [
+                    "dragon"
+                ],
+                "Weaknesses": [
+                    "ice",
+                    "dragon",
+                    "fairy"
+                ]
+            },
+            {
+                "Name": "ミュウ",
+                "Number": "151",
+                "Resistant": [
+                    "fighting",
+                    "psychic"
+                ],
+                "Types": [
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ミュウツー",
+                "Number": "150",
+                "Resistant": [
+                    "fighting",
+                    "psychic"
+                ],
+                "Types": [
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "メタモン",
+                "Number": "132",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "メノクラゲ",
+                "Number": "072",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "water",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "ground",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "モルフォン",
+                "Number": "049",
+                "Resistant": [
+                    "grass",
+                    "fighting",
+                    "poison",
+                    "bug",
+                    "fairy"
+                ],
+                "Types": [
+                    "bug",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "flying",
+                    "psychic",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "モンジャラ",
+                "Number": "114",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "ground"
+                ],
+                "Types": [
+                    "grass"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "poison",
+                    "flying",
+                    "bug"
+                ]
+            }
+        ],
+        "label": "ま行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "ヤドラン",
+                "Number": "080",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "fighting",
+                    "psychic",
+                    "steel"
+                ],
+                "Types": [
+                    "water",
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ヤドン",
+                "Number": "079",
+                "Resistant": [
+                    "fire",
+                    "water",
+                    "ice",
+                    "fighting",
+                    "psychic",
+                    "steel"
+                ],
+                "Types": [
+                    "water",
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            },
+            {
+                "Name": "ユンゲラー",
+                "Number": "064",
+                "Resistant": [
+                    "fighting",
+                    "psychic"
+                ],
+                "Types": [
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "bug",
+                    "ghost",
+                    "dark"
+                ]
+            }
+        ],
+        "label": "や行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "ライチュウ",
+                "Number": "026",
+                "Resistant": [
+                    "electric",
+                    "flying",
+                    "steel"
+                ],
+                "Types": [
+                    "electric"
+                ],
+                "Weaknesses": [
+                    "ground"
+                ]
+            },
+            {
+                "Name": "ラッキー",
+                "Number": "113",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "ラッタ",
+                "Number": "020",
+                "Resistant": [
+                    "ghost"
+                ],
+                "Types": [
+                    "normal"
+                ],
+                "Weaknesses": [
+                    "fighting"
+                ]
+            },
+            {
+                "Name": "ラプラス",
+                "Number": "131",
+                "Resistant": [
+                    "water",
+                    "ice"
+                ],
+                "Types": [
+                    "water",
+                    "ice"
+                ],
+                "Weaknesses": [
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ラフレシア",
+                "Number": "045",
+                "Resistant": [
+                    "water",
+                    "electric",
+                    "grass",
+                    "fighting",
+                    "fairy"
+                ],
+                "Types": [
+                    "grass",
+                    "poison"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "ice",
+                    "flying",
+                    "psychic"
+                ]
+            },
+            {
+                "Name": "リザード",
+                "Number": "005",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "リザードン",
+                "Number": "006",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "fighting",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire",
+                    "flying"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "electric",
+                    "rock"
+                ]
+            },
+            {
+                "Name": "ルージュラ",
+                "Number": "124",
+                "Resistant": [
+                    "ice",
+                    "psychic"
+                ],
+                "Types": [
+                    "ice",
+                    "psychic"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "bug",
+                    "rock",
+                    "ghost",
+                    "dark",
+                    "steel"
+                ]
+            },
+            {
+                "Name": "レアコイル",
+                "Number": "082",
+                "Resistant": [
+                    "normal",
+                    "electric",
+                    "grass",
+                    "ice",
+                    "poison",
+                    "flying",
+                    "psychic",
+                    "bug",
+                    "rock",
+                    "dragon",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "electric",
+                    "steel"
+                ],
+                "Weaknesses": [
+                    "fire",
+                    "fighting",
+                    "ground"
+                ]
+            },
+            {
+                "Name": "ロコン",
+                "Number": "037",
+                "Resistant": [
+                    "fire",
+                    "grass",
+                    "ice",
+                    "bug",
+                    "steel",
+                    "fairy"
+                ],
+                "Types": [
+                    "fire"
+                ],
+                "Weaknesses": [
+                    "water",
+                    "ground",
+                    "rock"
+                ]
+            }
+        ],
+        "label": "ら行"
+    },
+    {
+        "fields": [
+            {
+                "Name": "ワンリキー",
+                "Number": "066",
+                "Resistant": [
+                    "bug",
+                    "rock",
+                    "dark"
+                ],
+                "Types": [
+                    "fighting"
+                ],
+                "Weaknesses": [
+                    "flying",
+                    "psychic",
+                    "fairy"
+                ]
+            }
+        ],
+        "label": "わ行"
+    }
+];
+module.exports = data;
