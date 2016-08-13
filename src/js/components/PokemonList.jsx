@@ -14,6 +14,10 @@ const PokemonList = React.createClass({
     },
     componentDidMount: function() {
         this.setState({ flipsnap: Flipsnap(document.querySelector('.pokemonList')) });
+
+        window.addEventListener('resize', () => {
+            this.state.flipsnap.refresh();
+        });
     },
     componentDidUpdate: function() {
         document.querySelector('.pokemonList').style.width =  parseInt(this.props.data[this.props.current].fields.length*100)+'vw';
