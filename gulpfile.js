@@ -16,7 +16,7 @@ gulp.task('sass', function() {
   gulp.src('./src/sass/*.scss')
       .pipe(sass({ outputStyle: 'compressed' })
       .on('error', sass.logError))
-      .pipe(gulp.dest('./css'));
+      .pipe(gulp.dest('./docs/css'));
 });
 
 /* spriteSmith */
@@ -26,11 +26,11 @@ gulp.task('sprite', function() {
       .pipe(spriteSmith({
         imgName: 'sprite.png',
         cssName: '_sprite.scss',
-        imgPath: '../images/sprite.png',
+        imgPath: '../docs/images/sprite.png',
         cssFormat: 'scss'
       }));
       spriteData.img
-        .pipe(gulp.dest('./images/'));
+        .pipe(gulp.dest('./docs/images/'));
       spriteData.css
         .pipe(gulp.dest('./src/sass/parts/'));
 });
@@ -50,7 +50,7 @@ gulp.task('browserify', function() {
   .pipe(source("poketype.js"))
   .pipe(buffer())
   .pipe(uglify({ preserveComments: 'some' }))
-  .pipe(gulp.dest('./js/'));
+  .pipe(gulp.dest('./docs/js/'));
 });
 
 /* reactをProduct Buildにする */
@@ -62,6 +62,6 @@ gulp.task('apply-prod-environment', function() {
 /* connect */
 
 gulp.task('connect', function() {
-  gulp.src('./')
+  gulp.src('./docs/')
     .pipe(connect());
 });
