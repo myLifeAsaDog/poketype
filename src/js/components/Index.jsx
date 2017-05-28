@@ -14,7 +14,7 @@ export default class Index extends React.Component {
     gnavClick(index) {
         this.setState({ current: index });
     }
-    render()　{
+    render() {
         return (
             <div>
                 <Gnav current={this.state.current} gnav={this.props.gnav} _click={this.gnavClick} />
@@ -22,7 +22,7 @@ export default class Index extends React.Component {
             </div>
         );
     }
-};
+}
 Index.defaultProps = {
     gnav: gnavData   /* gnavの中身 */
 };

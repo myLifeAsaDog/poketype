@@ -2,20 +2,19 @@ import React from 'react';
 import nameMap from '../../data/nameMap';
 
 export default class Pokemon extends React.Component {
-    render()　{
-
+    render() {
         const pokemonImage = 'Pokemon' +this.props.no;
 
         const typeNodes = this.props.type.map(function(type, index) {
-            return <li className={'type-'+type} key={index}>{nameMap[type]}</li>
+            return (<li className={'type-'+type} key={index}>{nameMap[type]}</li>);
         });
 
         const resistNodes = this.props.resist.map(function(resist, index) {
-            return <li className={'type-'+resist} key={index}>{nameMap[resist]}</li>
+            return (<li className={'type-'+resist} key={index}>{nameMap[resist]}</li>);
         });
 
         const weakNodes = this.props.weak.map(function(weak, index) {
-            return <li className={'type-'+weak} key={index}>{nameMap[weak]}</li>
+            return (<li className={'type-'+weak} key={index}>{nameMap[weak]}</li>);
         });
 
         return (
@@ -50,4 +49,4 @@ export default class Pokemon extends React.Component {
             </li>
         );
     }
-};
+}

@@ -19,7 +19,7 @@ export default class PokemonList extends React.Component {
         this.state.flipsnap.moveToPoint(0,0);
         this.state.flipsnap.refresh();
     }
-    render()　{
+    render() {
 
         const listNodes = this.props.data[this.props.current].fields.map(function(pokemon) {
             return (
@@ -35,7 +35,7 @@ export default class PokemonList extends React.Component {
             </div>
         );
     }
-};
+}
 PokemonList.defaultProps = {
     data: pokemonData /* 表示用のポケモンデータ */
 };
