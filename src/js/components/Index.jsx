@@ -1,23 +1,20 @@
-const React = require('react');
-const Gnav = require('./Gnav.jsx');
-const PokemonList = require('./PokemonList.jsx');
-const gnavData = require('../../data/gnav');
+import React from 'react';
+import Gnav from './Gnav.jsx';
+import PokemonList from './PokemonList.jsx';
+import gnavData from '../../data/gnav';
 
-const Index = React.createClass({
-    getInitialState: function() {
-        return {
+export default class Index extends React.Component {
+    constructor() {
+        super();
+        this.state = {
             current: 0 /* gnavのカレント */
         };
-    },
-    getDefaultProps: function() {
-        return {
-            gnav: gnavData   /* gnavの中身 */
-        };
-    },
-    gnavClick: function(index) {
+        this.gnavClick = this.gnavClick.bind(this);
+    }
+    gnavClick(index) {
         this.setState({ current: index });
-    },
-    render: function()　{
+    }
+    render()　{
         return (
             <div>
                 <Gnav current={this.state.current} gnav={this.props.gnav} _click={this.gnavClick} />
@@ -25,5 +22,7 @@ const Index = React.createClass({
             </div>
         );
     }
-});
-module.exports = Index;
+};
+Index.defaultProps = {
+    gnav: gnavData   /* gnavの中身 */
+};

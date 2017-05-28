@@ -18,4 +18,4 @@ const nameMap = {
     "steel": "はがね",
     "fairy": "フェアリー"
 };
-module.exports = nameMap;
+export default nameMap;

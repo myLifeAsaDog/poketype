@@ -1,30 +1,25 @@
-const React = require('react');
-const Pokemon = require('./Pokemon.jsx');
-const pokemonData = require('../../data/pokemon');
-const Flipsnap = require('flipsnap');
+import React from 'react';
+import Pokemon from './Pokemon.jsx';
+import pokemonData from '../../data/pokemon';
+import Flipsnap from 'flipsnap';
 
-const PokemonList = React.createClass({
-    propTypes: {
-        current: React.PropTypes.number.isRequired
-    },
-    getDefaultProps: function() {
-        return {
-            data: pokemonData /* 表示用のポケモンデータ */
-        };
-    },
-    componentDidMount: function() {
+export default class PokemonList extends React.Component {
+    constructor() {
+        super();
+    }
+    componentDidMount() {
         this.setState({ flipsnap: Flipsnap(document.querySelector('.pokemonList')) });
 
         window.addEventListener('resize', () => {
             this.state.flipsnap.refresh();
         });
-    },
-    componentDidUpdate: function() {
+    }
+    componentDidUpdate() {
         document.querySelector('.pokemonList').style.width =  parseInt(this.props.data[this.props.current].fields.length*100)+'vw';
         this.state.flipsnap.moveToPoint(0,0);
         this.state.flipsnap.refresh();
-    },
-    render: function()　{
+    }
+    render()　{
 
         const listNodes = this.props.data[this.props.current].fields.map(function(pokemon) {
             return (
@@ -40,5 +35,7 @@ const PokemonList = React.createClass({
             </div>
         );
     }
-});
-module.exports = PokemonList;
+};
+PokemonList.defaultProps = {
+    data: pokemonData /* 表示用のポケモンデータ */
+};

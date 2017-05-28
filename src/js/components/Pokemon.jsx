@@ -1,15 +1,8 @@
-const React = require('react');
-const nameMap = require('../../data/nameMap');
+import React from 'react';
+import nameMap from '../../data/nameMap';
 
-const Pokemon = React.createClass({
-    propTypes: {
-        no: React.PropTypes.string.isRequired,
-        name: React.PropTypes.string.isRequired,
-        type: React.PropTypes.array.isRequired,
-        resist: React.PropTypes.array.isRequired,
-        weak: React.PropTypes.array.isRequired
-    },
-    render: function()　{
+export default class Pokemon extends React.Component {
+    render()　{
 
         const pokemonImage = 'Pokemon' +this.props.no;
 
@@ -57,5 +50,4 @@ const Pokemon = React.createClass({
             </li>
         );
     }
-});
-module.exports = Pokemon;
+};

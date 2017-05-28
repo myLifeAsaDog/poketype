@@ -2885,4 +2885,4 @@ const data = [
         "label": "わ行"
     }
 ];
-module.exports = data;
+export default data;

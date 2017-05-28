@@ -1,8 +1,8 @@
 'use strict';
 
-const React = require('react');
-const ReactDOM = require('react-dom');
-const Index = require('./components/Index.jsx');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Index from './components/Index.jsx';
 
 ReactDOM.render(
     <Index />,
