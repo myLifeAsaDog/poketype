@@ -8,7 +8,7 @@
     "prod": "webpack --config webpack-production.config.js",
     "sass": "node-sass --output-style compressed src/sass/poketype.scss docs/css/poketype.css",
     "sprite": "node_modules/.bin/spritesmith",
-    "eslint": "node_modules/.bin/eslint src/js/",
+    "eslint": "node_modules/.bin/eslint ./src/js/* ./src/js/**/*",
     "start": "npm run sprite && npm run sass && npm run prod"
   },
   "repository": {
