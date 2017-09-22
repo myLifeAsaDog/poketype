@@ -18,6 +18,7 @@ export default class Gnav extends React.Component {
     _gnavClick(index) {
         /* 親コンポーネントにイベントを委譲 */
         this.props._click(index);
+        this.setState({ gnavClass: 'ExClose' });
     }
     render() {
         const gnavTitle = this.props.gnav[this.props.current];
